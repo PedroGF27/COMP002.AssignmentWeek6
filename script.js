@@ -15,5 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const notification = document.getElementById('submit'); // assigns the ID submit to constant variable notification
     const greeting = document.getElementById('greeting');// assigns the ID greeting to constant variable greeting
 
+function savePreferences(event) { // defines a function names savePreferences. The event object is the event that triggered the function.
+    event.preventDefault(); // prevents default action. This allows the form submission to be handled by javascript.
+    const name = document.getElementById('name').value; // retrieves the current value of ID name. Then it is stored in the constant variable
+    const bgColor = document.getElementById('background-color').value; // retrieves ID 'background-color' current value. Then is stored in variable bgColor
+    const fgColor = document.getElementById('foreground-color').value; // retrieves ID 'foreground-color' current value then stores it in fgColor
 
+}
 })
