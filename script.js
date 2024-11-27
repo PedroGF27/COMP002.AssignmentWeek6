@@ -21,5 +21,8 @@ function savePreferences(event) { // defines a function names savePreferences. T
     const bgColor = document.getElementById('background-color').value; // retrieves ID 'background-color' current value. Then is stored in variable bgColor
     const fgColor = document.getElementById('foreground-color').value; // retrieves ID 'foreground-color' current value then stores it in fgColor
 
+    localStorage.setItem('name', name);
+    localStorage.setItem('background-color', bgColor);
+    localStorage.setItem('foreground-color', fgColor);
 }
 })
