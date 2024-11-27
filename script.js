@@ -9,3 +9,11 @@
 // also want to call this function again when the user saves their preferences to
 // immediately apply them. Make sure you also notify the user somehow that the preferences
 // were saved.
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('preferences-form'); // assigns preferences-form to the constant variable form
+    const notification = document.getElementById('submit'); // assigns the ID submit to constant variable notification
+    const greeting = document.getElementById('greeting');// assigns the ID greeting to constant variable greeting
+
+
+})
