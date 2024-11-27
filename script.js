@@ -37,6 +37,15 @@ function applyPreferences() {
     const bgColor = localStorage.getItem('background-color'); // retrieves 'background-color' from local storage
     const fgColor = localStorage.getItem('foreground-color'); // retrieves 'foreground-color' from local storage
 
-
+    if (name) {
+        greeting.textContent = `Welcome, ${name}!`; // checks 'name' value and updates "greeting"
+    }
+    if (bgColor) {
+        document.body.style.backgroundColor = bgColor; // Checks 'bgColor' value and sets background color accordingly
+    }
+    if (fgColor) {
+        document.body.style.color = fgColor; // checks 'fgColor' value and sets foreground color accordingly. 
+    }
 }
+
 })
