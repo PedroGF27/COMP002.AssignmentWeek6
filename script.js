@@ -24,5 +24,12 @@ function savePreferences(event) { // defines a function names savePreferences. T
     localStorage.setItem('name', name);
     localStorage.setItem('background-color', bgColor);
     localStorage.setItem('foreground-color', fgColor);
+
+    applyPreferences(); // retrieves preferences from the localStorage and applies them to the web page.
+    notification.style.display = 'block'; // used to style 'notification' element to make it more visible and tell the user that their preferences were saved.
+    setTimeout(() => {
+        notification.style.display = 'none';
+    }, 2000); // hides the 'notification' element after 2 seconds
 }
+
 })
