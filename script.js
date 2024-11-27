@@ -32,4 +32,11 @@ function savePreferences(event) { // defines a function names savePreferences. T
     }, 2000); // hides the 'notification' element after 2 seconds
 }
 
+function applyPreferences() {
+    const name = localStorage.getItem('name'); // retrieves 'name' from local storage
+    const bgColor = localStorage.getItem('background-color'); // retrieves 'background-color' from local storage
+    const fgColor = localStorage.getItem('foreground-color'); // retrieves 'foreground-color' from local storage
+
+
+}
 })
